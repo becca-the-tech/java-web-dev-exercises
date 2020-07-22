@@ -89,4 +89,12 @@ public class Program {
         assertTrue(alexasPhone.makeCall("Becca The Greatest and Most Humblest").equals("You are now calling: Becca The Greatest and Most Humblest"));
     }
 
+    public static void main(String[] args){
+
+        Computer acerChromebook = new Computer("Acer", 32, 199);
+        Laptop dellLaptop = new Laptop("Dell", 128, 712.05, 8);
+        SmartPhone alexasPhone = new SmartPhone("Apple", 32, 999, "111-123-4567");
+        System.out.println(dellLaptop.getId());
+    }
+
 }

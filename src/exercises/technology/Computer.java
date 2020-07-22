@@ -1,6 +1,6 @@
 package exercises.technology;
 
-public class Computer {
+public class Computer extends AbstractEntity {
     private String brand;
     private int hardDriveSize;
     private double cost;
@@ -8,12 +8,14 @@ public class Computer {
     private int programCounter = 0;
 
     public Computer(){
+        super();
         this.brand = "Unspecified";
         this.hardDriveSize = 0;
         this.cost = 0.0;
     }
 
     public Computer(String brand, int hardDriveSize, double cost){
+        super();
         this.brand = brand;
         this.hardDriveSize = hardDriveSize;
         this.cost = cost;
